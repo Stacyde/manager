@@ -11,11 +11,6 @@ public class manager { // дата класс описывающий объек�
 
     CartRepository repo = new CartRepository();
     repo.save(first);
-    repo.save(second);
-    repo.save(third);
-    repo.save(fourth);
-    repo.save(fifth);
-    repo.save(sixth);
 
 
 
@@ -49,7 +44,6 @@ public class manager { // дата класс описывающий объек�
 
     }
 }
-
 
 
 //метод -добавить фильм в ленту (класс фильма)
