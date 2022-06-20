@@ -1,8 +1,12 @@
 package ru.netology;
 
+import org.junit.jupiter.api.Test;
 
-public class manager { // дата класс описывающий объект одной строчки в корзине покупок
-    public static void manager(String[] args) {
+import static org.junit.jupiter.api.Assertions.*;
+
+class CartRepositoryTest {
+    @Test
+    public void test (){
         PurchaseFilm first = new PurchaseFilm(1, 1, "Bloodshot", "Action");
         PurchaseFilm second = new PurchaseFilm(2, 2, "Forward", "Cartoon");
         PurchaseFilm third = new PurchaseFilm(3, 3, "Hotel Belgrade", "Comedy");
@@ -18,20 +22,8 @@ public class manager { // дата класс описывающий объек�
         repo.save(fifth);
         repo.save(sixth);
 
-
+        repo.findAll();
 
     }
+
 }
-
-
-
-//метод -добавить фильм в ленту (класс фильма)
-//выдать последние 10 добавленных фильмов
-// у менеджера два конструктора - один без параметров выставляющий 10, другой выставляющий лимит менеджера в 10
-
-
-
-
-
-
-
