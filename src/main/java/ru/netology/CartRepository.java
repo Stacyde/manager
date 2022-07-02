@@ -16,9 +16,8 @@ public class CartRepository {
         return films;
     }
 
-
-
-
+    public PurchaseFilm[] findLast() {
+        return films;
+    }
 }
-
 

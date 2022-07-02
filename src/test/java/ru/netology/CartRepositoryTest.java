@@ -24,6 +24,11 @@ class CartRepositoryTest {
 
         repo.findAll();
 
+        PurchaseFilm[] expected = {fifth,second,third,fourth,fifth,sixth};
+        PurchaseFilm[]actual = repo.findAll();
+
+        assertArrayEquals(expected, actual);
+
     }
 
 }
